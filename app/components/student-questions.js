@@ -1,26 +1,26 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  checkOne: true,
-  checkTwo: false,
-  checkThree: false,
-  helpForm: false,
+  checkOneBool: true,
+  checkTwoBool: false,
+  checkThreeBool: false,
+  helpFormBool: false,
   actions: {
     hideCheckOne() {
-      this.set('checkOne', false);
-      this.set('checkTwo', true);
+      this.set('checkOneBool', false);
+      this.set('checkTwoBool', true);
     },
     hideCheckTwo () {
-      this.set('checkTwo', false);
-      this.set('checkThree', true);
+      this.set('checkTwoBool', false);
+      this.set('checkThreeBool', true);
     },
     hideCheckThree () {
-      this.set('checkThree', false);
-      this.set('helpForm', true);
+      this.set('checkThreeBool', false);
+      this.set('helpFormBool', true);
     },
     saveHelpRequest() {
-      this.set('checkOne', true);
-      this.set('helpForm', false);
+      this.set('checkOneBool', true);
+      this.set('helpFormBool', false);
     }
   }
 });
